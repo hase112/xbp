@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    
+    <title>ﾊｾｶﾞﾜの第5回</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h2>第5回</h2>
+<h3>ゲーム<small>(課題)</small></h3><br>
+<div> <b>ルール
+</b> 自分がすきな数字を入力するとコンピュータも１から１００のランダムな数字を出します。<br>
+    コンピュータの出した数字との差が３０以内で且つ自分の方が数字が大きい場合に勝ちとなります。
+</div>
+<div><code>
+    <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+    <li style="background-color:#EFF;">number=int(input(<font style="color:brown;">"数字を入れてください"</font>))</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">import random</li>
+    <li style="background-color:#EEF;">a = random.randint(1, 100)#乱数を使って1~100のランダムな数字を出す</li>
+    <li style="background-color:#EFF;">print(a)</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">if number&gt;a and number-a&lt;=30:#コンピュータより数字が高くて、差が30以内の時</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print(<font style="color:brown;">"あなたの勝ち"</font>)</li>
+    <li style="background-color:#EFF;">elif number&lt;a and a-number&gt;30:#コンピュータより数字が低くて、差が30以上の時</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print(<font style="color:brown;">"あなたの勝ち"</font>)</li>
+    <li style="background-color:#EFF;">else:#それ以外の時</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print(<font style="color:brown;">"あなたの負け"</font>)</li>
+    </ol></code><br> </div>
+<div>班内でのルールの共有に時間がかかりました。</div>
+</body>
+</html>
